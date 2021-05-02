@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Category": 10,
+    "Title": "Чиззи чеддер",
+    "Description": "Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус, чеснок, итальянские травы",
+    "Cost": 395,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44095.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Цезарь",
+    "Description": "Свежие листья салата айсберг, цыплёнок, томаты черри, сыры чеддер и пармезан, моцарелла, сливочный соус, соус цезарь",
+    "Cost": 445,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44090.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Цыпленок блю чиз",
+    "Description": "Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо",
+    "Cost": 445,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44092.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Нежный лосось",
+    "Description": "Лосось, томаты черри, соус песто, моцарелла, соус альфредо",
+    "Cost": 495,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44077.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Сырная",
+    "Description": "Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо",
+    "Cost": 245,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44095.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Пепперони фреш",
+    "Description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
+    "Cost": 245,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44090.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Кисло-сладкий цыпленок",
+    "Description": "Цыпленок, кисло-сладкий соус, моцарелла, томатный соус",
+    "Cost": 295,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44092.png"
+  },
+  {
+    "Category": 10,
+    "Title": "Ветчина и сыр",
+    "Description": "Ветчина, моцарелла, соус альфредо",
+    "Cost": 295,
+    "ImageUrl": "http://pngimg.com/uploads/pizza/pizza_PNG44077.png"
+  }
+]

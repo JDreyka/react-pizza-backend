@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using react.pizza.backend.Data;
 
 namespace react.pizza.backend
 {
@@ -18,6 +20,9 @@ namespace react.pizza.backend
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(opt => 
+                opt.UseNpgsql(Configuration.GetConnectionString("PostgresCS")));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
