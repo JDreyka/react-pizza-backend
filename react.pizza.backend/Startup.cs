@@ -38,6 +38,8 @@ namespace react.pizza.backend
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
 
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "react.pizza.backend v1"));
 
