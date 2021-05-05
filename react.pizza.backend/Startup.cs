@@ -4,9 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using react.pizza.backend.Configs;
 using react.pizza.backend.Data;
+using Telegram.Bot;
 
 namespace react.pizza.backend
 {
@@ -21,8 +23,13 @@ namespace react.pizza.backend
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<TelegramBotConfig>(Configuration.GetSection(nameof(TelegramBotConfig)));
+
             services.AddDbContext<ApplicationDbContext>(opt =>
                 opt.UseNpgsql(Configuration.GetConnectionString("PostgresCS")));
+
+            services.AddSingleton<ITelegramBotClient>(x =>
+                new TelegramBotClient(x.GetRequiredService<IOptions<TelegramBotConfig>>().Value.ApiKey));
 
             services.AddAutoMapper(typeof(MapperProfile));
 
